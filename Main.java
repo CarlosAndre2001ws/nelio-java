@@ -1,9 +1,7 @@
-import classes.PensionatoDesafio;
-import exercicio.fixacao.*;
+import classes.*;
 
 public class Main {
     public static void main(String[] args) {
-
-        new PensionatoDesafio().run();
+        new LacoForEach().run();
     }
 }
