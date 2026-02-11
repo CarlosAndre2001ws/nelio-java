@@ -3,11 +3,10 @@ package classes;
 import entities.Employee;
 import entities.Leitor;
 
-import javax.xml.namespace.QName;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ListExercice {
+public class ListExercise {
 
     public void run () {
         int n;
