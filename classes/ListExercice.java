@@ -41,6 +41,7 @@ public class ListExercice {
 
         new Employee().increaseSalary(employeeList, id, perc);
 
+        System.out.println();
         System.out.println("List of employees: ");
         for(Employee employee: employeeList) {
             System.out.println(employee.getId() + ", " + employee.getName() + ", " + employee.getSalary());
