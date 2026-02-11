@@ -27,7 +27,6 @@ public class ListExercice {
             System.out.print("Id: "); id = Integer.parseInt(sc.scanner().nextLine());
             System.out.print("Name: "); name = sc.scanner().nextLine();
             System.out.print("Salary: "); salary = Double.parseDouble(sc.scanner().nextLine());
-            System.out.println();
 
            boolean created = new Employee().newEmployee(employeeList, id, name, salary);
 
