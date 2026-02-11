@@ -43,7 +43,7 @@ public class ListExercise {
         System.out.println();
         System.out.println("List of employees: ");
         for(Employee employee: employeeList) {
-            System.out.println(employee.getId() + ", " + employee.getName() + ", " + employee.getSalary());
+            System.out.println(employee.getId() + ", " + employee.getName() + ", " + String.format("%.2f", employee.getSalary()));
         }
 
         sc.fecharLeitor();
