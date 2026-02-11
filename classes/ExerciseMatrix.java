@@ -16,7 +16,7 @@ public class ExerciseMatrix {
         }
 
         for(int i = 0; i < n; i++) {
-            System.out.println("matrix[" + i + "][" + "] = " + matrix[i][i]);
+            System.out.println("matrix[" + i + "][" + i + "] = " + matrix[i][i]);
         }
 
         sc.fecharLeitor();
