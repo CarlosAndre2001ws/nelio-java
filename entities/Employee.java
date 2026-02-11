@@ -3,11 +3,9 @@ package entities;
 import java.util.List;
 
 public class Employee {
-    private long id;
-    private String name;
+    private final int id;
+    private final String name;
     private double salary;
-
-    public Employee() {}
 
     private Employee(int id, String name, double salary) {
         this.id = id;
@@ -37,7 +35,7 @@ public class Employee {
         return null;
     }
 
-    public boolean newEmployee(List<Employee> employeeList, int id, String name, double salary) {
+    public static boolean newEmployee(List<Employee> employeeList, int id, String name, double salary) {
         for (Employee employee: employeeList) {
             if(employee.getId() == id) {
                 System.out.println("Erro ! O id inserido já existe. Por favor tente novamente.");
@@ -49,7 +47,7 @@ public class Employee {
         return true;
     }
 
-    public void increaseSalary(List<Employee> employeeList, int id, double perc) {
+    public static void increaseSalary(List<Employee> employeeList, int id, double perc) {
         Employee luckyEmployee = getById(employeeList, id);
 
         if(luckyEmployee != null) {

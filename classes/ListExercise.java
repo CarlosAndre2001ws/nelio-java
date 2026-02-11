@@ -27,7 +27,7 @@ public class ListExercise {
             System.out.print("Name: "); name = sc.scanner().nextLine();
             System.out.print("Salary: "); salary = Double.parseDouble(sc.scanner().nextLine());
 
-           boolean created = new Employee().newEmployee(employeeList, id, name, salary);
+           boolean created = Employee.newEmployee(employeeList, id, name, salary);
 
            if(!created) {
                return;
@@ -38,7 +38,7 @@ public class ListExercise {
         System.out.print("Enter the employee id that will have salary increase : "); int id = Integer.parseInt(sc.scanner().nextLine());
         System.out.print("Enter the percentage: "); double perc = Double.parseDouble(sc.scanner().nextLine());
 
-        new Employee().increaseSalary(employeeList, id, perc);
+        Employee.increaseSalary(employeeList, id, perc);
 
         System.out.println();
         System.out.println("List of employees: ");
