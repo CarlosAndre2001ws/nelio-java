@@ -37,9 +37,16 @@ public class Employee {
         return null;
     }
 
-    public void newEmployee(List<Employee> employeeList, int id, String name, double salary) {
+    public boolean newEmployee(List<Employee> employeeList, int id, String name, double salary) {
+        for (Employee employee: employeeList) {
+            if(employee.getId() == id) {
+                System.out.println("Erro ! O id inserido já existe. Por favor tente novamente.");
+                return false;
+            }
+        }
         Employee newEmployee = new Employee(id, name, salary);
         employeeList.add(newEmployee);
+        return true;
     }
 
     public void increaseSalary(List<Employee> employeeList, int id, double perc) {

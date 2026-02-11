@@ -26,10 +26,14 @@ public class ListExercice {
             System.out.println("Employee #" + String.format("%.0f", (double)i + 1) + ":");
             System.out.print("Id: "); id = Integer.parseInt(sc.scanner().nextLine());
             System.out.print("Name: "); name = sc.scanner().nextLine();
-            System.out.print("Salary"); salary = Double.parseDouble(sc.scanner().nextLine());
+            System.out.print("Salary: "); salary = Double.parseDouble(sc.scanner().nextLine());
             System.out.println();
 
-            new Employee().newEmployee(employeeList, id, name, salary);
+           boolean created = new Employee().newEmployee(employeeList, id, name, salary);
+
+           if(!created) {
+               return;
+           }
         }
 
         System.out.print("Enter the employee id that will have salary increase : "); int id = Integer.parseInt(sc.scanner().nextLine());
