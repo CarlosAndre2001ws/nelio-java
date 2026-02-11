@@ -37,7 +37,7 @@ public class ListExercice {
 
         System.out.println();
         System.out.print("Enter the employee id that will have salary increase : "); int id = Integer.parseInt(sc.scanner().nextLine());
-        System.out.print("Enter the percentage"); double perc = Double.parseDouble(sc.scanner().nextLine());
+        System.out.print("Enter the percentage: "); double perc = Double.parseDouble(sc.scanner().nextLine());
 
         new Employee().increaseSalary(employeeList, id, perc);
 
