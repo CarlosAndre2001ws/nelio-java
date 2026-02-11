@@ -12,7 +12,7 @@ public class ExerciseMatrix {
 
         for (int i = 0; i < n; i++) {
             for(int j = 0; j < n; j++) {
-                System.out.print("matrix[" + i + "][" + j + "]: ");matrix[i][j] = Integer.parseInt(sc.scanner().nextLine());
+                matrix[i][j] = sc.scanner().nextInt();
                 if(matrix[i][j] < 0 ) {
                     negatives++;
                 }
@@ -20,9 +20,10 @@ public class ExerciseMatrix {
         }
 
         for(int i = 0; i < n; i++) {
-            System.out.println("matrix[" + i + "][" + i + "] = " + matrix[i][i]);
+            System.out.print(matrix[i][i] + " ");
         }
 
+        System.out.println();
         System.out.println("Negative elements in the matrix: " + negatives);
 
         sc.fecharLeitor();
