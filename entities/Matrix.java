@@ -8,7 +8,7 @@ public class Matrix {
     public Matrix(int x, int y) {
         this.x = x;
         this.y = y;
-        matrix = new int[this.x][this.y];
+        this.matrix = new int[this.x][this.y];
     }
 
     public int[][] getMatrix() {
@@ -21,5 +21,9 @@ public class Matrix {
 
     public int getY() {
         return this.y;
+    }
+
+    public void setElement(int x, int y, int element) {
+        this.matrix[x][y] = element;
     }
 }
