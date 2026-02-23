@@ -41,4 +41,9 @@ public class Order {
     public void setMoment(Date moment) {
         this.moment = moment;
     }
+
+    @Override
+    public String toString() {
+        return "Order [id=" + id + ", moment=" + moment + ", status=" + status + "]";
+    }
 }
