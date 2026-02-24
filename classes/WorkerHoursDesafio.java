@@ -30,7 +30,7 @@ public class WorkerHoursDesafio {
         double baseSalary = sc.nextDouble();
         Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalary, new Department(departmentName));
 
-        System.out.println("How many contracts to this worker? ");
+        System.out.print("How many contracts to this worker? ");
         int n = sc.nextInt();
 
         for (int i=1; i<=n; i++) {
