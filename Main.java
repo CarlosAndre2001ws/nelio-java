@@ -1,7 +1,10 @@
 import classes.EnumClass;
+import classes.WorkerHoursDesafio;
+
+import java.text.ParseException;
 
 public class Main {
-    public static void main(String[] args) {
-        EnumClass.run();
+    public static void main(String[] args) throws ParseException {
+        WorkerHoursDesafio.run();
     }
 }
