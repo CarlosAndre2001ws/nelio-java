@@ -1,8 +1,8 @@
 package entities.pedidoNItens;
 
 public class Product {
-    String name;
-    Double price;
+    private String name;
+    private Double price;
 
     public String getName() {
         return name;
