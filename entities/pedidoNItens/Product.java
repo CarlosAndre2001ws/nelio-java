@@ -21,7 +21,4 @@ public class Product {
         return price;
     }
 
-    public void setPrice(Double price) {
-        this.price = price;
-    }
 }

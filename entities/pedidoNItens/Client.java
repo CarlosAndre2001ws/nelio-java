@@ -25,15 +25,7 @@ public class Client {
         return birthDate;
     }
 
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
     public String getEmail() {
         return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }

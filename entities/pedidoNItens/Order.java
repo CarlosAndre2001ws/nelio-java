@@ -12,7 +12,7 @@ public class Order {
     private LocalDateTime moment = LocalDateTime.now();
     private final Client client;
     private OrderStatus status;
-    private final ArrayList<OrderItem> orderItems = new ArrayList<OrderItem>();
+    private final ArrayList<OrderItem> orderItems = new ArrayList<>();
 
     public Order(Client client, OrderStatus status) {
         this.client = client;
@@ -31,24 +31,8 @@ public class Order {
         return status;
     }
 
-    public ArrayList<OrderItem> getOrderItems() {
-        return orderItems;
-    }
-
-    public void setMoment(LocalDateTime moment) {
-        this.moment = moment;
-    }
-
-    public void setStatus(OrderStatus status) {
-        this.status = status;
-    }
-
     public void addItem(OrderItem item) {
         this.orderItems.add(item);
-    }
-
-    public void removeItem(OrderItem item) {
-        this.orderItems.remove(item);
     }
 
     public double getTotal() {
