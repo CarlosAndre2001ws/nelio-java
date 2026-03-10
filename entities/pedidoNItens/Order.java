@@ -9,9 +9,9 @@ import java.util.ArrayList;
 
 public class Order {
 
-    private LocalDateTime moment = LocalDateTime.now();
+    private final LocalDateTime moment = LocalDateTime.now();
     private final Client client;
-    private OrderStatus status;
+    private final OrderStatus status;
     private final ArrayList<OrderItem> orderItems = new ArrayList<>();
 
     public Order(Client client, OrderStatus status) {

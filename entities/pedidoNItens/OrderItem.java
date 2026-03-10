@@ -2,9 +2,9 @@ package entities.pedidoNItens;
 
 public class OrderItem {
 
-    private int quantity;
-    private Double price;
-    private Product product;
+    private final int quantity;
+    private final Double price;
+    private final Product product;
 
     public OrderItem(Product product, int quantity) {
         this.product = product;
