@@ -1,11 +1,12 @@
 import classes.polimorfismo.PolimorfismoClass;
-import classes.upcastdowncast.UpAndDownCastingClass;
+import exercicio.fixacao.exercicio142.RunClass;
+
 import java.text.ParseException;
 
 public class Main {
     public static void main(String[] args) throws ParseException {
 
-        PolimorfismoClass.run();
+        RunClass.run();
 
     }
 }
